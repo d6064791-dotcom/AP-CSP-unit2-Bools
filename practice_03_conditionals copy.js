@@ -13,8 +13,23 @@
 //   "positive odd"    if num is positive and odd
 //   "negative even"   if num is negative and even
 //   "negative odd"    if num is negative and odd
+/*
 function classifyNumber(num) {
-  // TODO: your code here
+  if (num === 0) {
+    return 'zero' 
+  }
+  else if (num > 0 && num%2 === 0){
+    return 'positive even'
+  }
+  else if (num > 0 && num%2 === 1){
+    return 'positive odd'
+  }
+  else if (num < 0 && num%2 === 0){
+    return 'negative even'
+  }
+  else {
+    return 'negative odd'
+  }
 }
 
 console.log(classifyNumber(0)); // "zero"
@@ -32,7 +47,24 @@ console.log(classifyNumber(-7)); // "negative odd"
 //   below 60 -> "F"
 // If score is less than 0 or greater than 100, return "Invalid score".
 function getLetterGrade(score) {
-  // TODO: your code here
+  if (score < 0 || score > 100){
+  return 'Invalid score'
+}
+else if (score < 60) {
+  return 'F'
+}
+else if (score < 70) {
+  return 'D'
+}
+else if (score < 80) {
+  return 'C'
+}
+else if (score < 90) {
+  return 'B'
+}
+else{
+  return 'A'
+}
 }
 
 console.log(getLetterGrade(95)); // "A"
@@ -48,14 +80,25 @@ console.log(getLetterGrade(150)); // "Invalid score"
 //   "FizzBuzz" if num is divisible by both 3 and 5
 //   otherwise, num converted to a string
 function fizzBuzz(num) {
-  // TODO: your code here
+  if (num % 5 === 0 && num % 3 === 0){
+    return 'FizzBuzz'
+  }
+  else if (num % 5 === 0){
+    return 'Buzz'
+  }
+  else if (num % 3 === 0){
+    return 'Fizz'
+  }
+  else {
+    return `${num}`
+  }
 }
 
 console.log(fizzBuzz(3)); // "Fizz"
 console.log(fizzBuzz(5)); // "Buzz"
 console.log(fizzBuzz(15)); // "FizzBuzz"
 console.log(fizzBuzz(7)); // "7"
-
+*/
 // ---------- Problem 4: Shipping Cost Calculator ----------
 // If isMember is true:
 //   weight <= 5  -> 0 (free)
@@ -73,7 +116,7 @@ console.log(getShippingCost(8, true)); // 3
 console.log(getShippingCost(0.5, false)); // 5
 console.log(getShippingCost(4, false)); // 8
 console.log(getShippingCost(10, false)); // 12
-
+/*
 // ---------- Stretch (optional) ----------
 // Rewrite the even/odd check from Problem 1 using the ternary operator
 // instead of if / else.
@@ -83,3 +126,4 @@ function isEvenTernary(num) {
 
 console.log(isEvenTernary(4)); // true
 console.log(isEvenTernary(7)); // false
+*/
